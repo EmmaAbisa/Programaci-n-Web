@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+    <!-- CORRECCIÓN: Enlace completo y correcto para cargar la fuente Inter -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Vinculación del archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/EJERCICIO_11.css">
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h1>Conversor de KM a Millas</h1>
+        <p class="subtitulo">Transforma kilometros a millas.</p>
+
+        <form id="form-conversor">
+            <!-- Entrada: Kilometros -->
+            <div class="grupo-formulario">
+                <label for="Km">Kilometros</label>
+                <input type="text" id="KM" placeholder="Ej: 120">
+                <div id="error-Km" class="error-mensaje">Por favor, ingresa un número válido.</div>
+            </div>
+
+            <!-- Salida: Grados Fahrenheit (Bloqueado) -->
+            <div class="grupo-formulario">
+                <label for="Millas">Resultado en Millas</label>
+                <input type="text" id="Millas" readonly placeholder="El resultado aparecerá aquí">
+            </div>
+
+            <!-- Botón de conversión -->
+            <button type="button" id="btn-convertir" class="boton-enviar">Convertir</button>
+        </form>
+    </div>
+
+    <!-- Vinculación del archivo lógico de JavaScript -->
+    <script src="js/EJERCICIO_11.js"></script>
+</body>
+</html>

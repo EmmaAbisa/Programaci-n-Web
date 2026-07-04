@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <!-- CORRECCIÓN: Enlace completo y correcto para cargar la fuente Inter -->
+
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!--Vinculación del archivo de estilos CSS-->
+    <link rel="stylesheet" href="css/EJERCICIO_15.css">
+</head>
+<body>
+
+
+    
+
+    <div class="contenedor-formulario">
+        <h1>Cadenas</h1>
+        <p class="subtitulo">Revise Alumnos.</p>
+
+        <form id="form-conversor">
+            <!-- Entrada: Kilometros -->
+            <div class="grupo-formulario">
+                <label for="NOMBRE">Ingresa el nombre del alumno</label>
+                <input type="text" id="NOMBRE" placeholder="Ej: 100">
+                <div id="error-NOMBRE" class="error-mensaje">Por favor, ingresa un nombre correcto.</div>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="CALIFICACION">Ingresa una cadena de numeros</label>
+                <input type="text" id="CALIFICACION" placeholder="Ej: 100">
+                <div id="error-CALIFICACION" class="error-mensaje">Por favor, ingresa una calificacion valida.</div>
+            </div>
+
+
+
+
+            <!-- Salida: Grados Fahrenheit (Bloqueado) -->
+            <div class="grupo-formulario">
+                <label for="CALCULA1">Numero Mayor</label>
+                <input type="text" id="CALCULA1" readonly placeholder="El resultado aparecerá aquí">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="CALCULA2">Numero Menor</label>
+                <input type="text" id="CALCULA2" readonly placeholder="El resultado aparecerá aquí">
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="CALCULA3">Promedio</label>
+                <input type="text" id="CALCULA3" readonly placeholder="El resultado aparecerá aquí">
+            </div>
+            <!-- Botón de conversión -->
+            <button type="button" id="btn-convertir" class="boton-enviar">Calcular</button>
+            <button type="button" id="btn-agregar" class="boton-enviar">Agregar Estudiante</button>
+        </form>
+    </div>
+
+    <!-- Vinculación del archivo lógico de JavaScript -->
+    <script src="js/EJERCICIO_15.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+    <!-- CORRECCIÓN: Enlace completo y correcto para cargar la fuente Inter -->
+
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!--Vinculación del archivo de estilos CSS-->
+    <link rel="stylesheet" href="css/EJERCICIO_11.css">
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h1>Conversor de MXN a USD</h1>
+        <p class="subtitulo">Transforma pesos Mexicanos a Dolares.</p>
+
+        <form id="form-conversor">
+            <!-- Entrada: Kilometros -->
+            <div class="grupo-formulario">
+                <label for="MXN">Pesos Mexicanos</label>
+                <input type="text" id="MXN" placeholder="Ej: 100">
+                <div id="error-MXN" class="error-mensaje">Por favor, ingresa un número válido.</div>
+            </div>
+
+            <!-- Salida: Grados Fahrenheit (Bloqueado) -->
+            <div class="grupo-formulario">
+                <label for="USD">Resultado en Dolares</label>
+                <input type="text" id="USD" readonly placeholder="El resultado aparecerá aquí">
+            </div>
+
+            <!-- Botón de conversión -->
+            <button type="button" id="btn-convertir" class="boton-enviar">Convertir</button>
+        </form>
+    </div>
+
+    <!-- Vinculación del archivo lógico de JavaScript -->
+    <script src="js/EJERCICIO_12.js"></script>
+</body>
+</html>
